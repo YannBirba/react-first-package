@@ -1,0 +1,14 @@
+{
+  "name": "react-first-package",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "package/*",
+      "site/*"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/osiolabs/example.git"
+  }
+}
