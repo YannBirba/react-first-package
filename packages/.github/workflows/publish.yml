@@ -9,13 +9,10 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: "12.x"
-          registry-url: "https://registry.npmjs.org"
+          node-version: "16.x"
+          registry-url: "https://registry.npmjs.org/react-first-package"
       - run: npm install
       - run: npm run-script build
       - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-
-          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
