@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "eamodio.gitlens",
+    "bradlc.vscode-tailwindcss",
+    "austenc.tailwind-docs",
+    "ms-vscode.vscode-typescript-next",
+    "mattpocock.ts-error-translator",
+    "antfu.vite",
+    "github.copilot",
+    "dotenv.dotenv-vscode",
+    "paulshen.paul-typescript-toolkit"
+  ]
+}

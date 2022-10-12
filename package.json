@@ -3,12 +3,8 @@
   "private": true,
   "workspaces": {
     "packages": [
-      "package/*",
-      "site/*"
+      "packages/*",
+      "sites/*"
     ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/YannBirba/react-first-package.git"
   }
 }
