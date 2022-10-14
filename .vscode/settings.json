@@ -19,5 +19,9 @@
     "typescriptreact"
   ],
   "eslint.alwaysShowStatus": true,
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 80
 }
