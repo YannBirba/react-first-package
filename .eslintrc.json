@@ -68,7 +68,27 @@
     ],
     "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
     "no-extra-semi": "error",
-
+    "max-len": [
+      "error",
+      {
+        "code": 80,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreRegExpLiterals": true,
+        "ignoreUrls": true,
+        "ignorePattern": "^import\\s.+\\sfrom\\s.+;$"
+      }
+    ],
+    "max-depth": ["error", 4],
+    "max-lines": [
+      "error",
+      {
+        "max": 400,
+        "skipBlankLines": true,
+        "skipComments": true
+      }
+    ],
+    "no-else-return": "error",
     "default-case": "error",
     "no-async-promise-executor": "error",
     "no-await-in-loop": "error",

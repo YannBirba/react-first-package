@@ -26,16 +26,6 @@ export default defineConfig({
           react: "React",
           "react-dom": "ReactDOM",
         },
-        assetFileNames: (assetInfo) => {
-          var info = assetInfo.name.split(".");
-          var extType = info[info.length - 1];
-          if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
-            extType = "img";
-          } else if (/woff|woff2/.test(extType)) {
-            extType = "css";
-          }
-          return `static/${extType}/[name]-[hash][extname]`;
-        },
       },
     },
     target: "esnext",
