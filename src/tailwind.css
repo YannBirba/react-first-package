@@ -9,3 +9,6 @@ html {
 html.dark {
   @apply bg-slate-700;
 }
+
+@layer components {
+}
