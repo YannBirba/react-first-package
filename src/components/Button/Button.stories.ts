@@ -15,6 +15,8 @@ export const Primary: ComponentStoryObj<typeof Button> = {
   },
   args: {
     "aria-label": "Hello world",
+    buttonClassName:
+      "text-white bg-blue-500 hover:bg-blue-700 font-bold py-2 px-4 rounded",
     children: "Hello world",
     disabled: false,
     submit: false,
