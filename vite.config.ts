@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import react from "@vitejs/plugin-react";
 import { resolve } from "path";
 import { defineConfig } from "vite";
@@ -14,7 +15,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
       name: "react-first-package",
-      formats: ["es", "umd"],
+      formats: ["es", "umd", "cjs"],
       fileName: (format) => `rfp.${format}.js`,
     },
     rollupOptions: {
@@ -26,5 +27,7 @@ export default defineConfig({
         },
       },
     },
+    target: "esnext",
+    sourcemap: true,
   },
 });
