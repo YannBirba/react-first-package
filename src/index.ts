@@ -1,4 +1,4 @@
-import "./tailwind.css";
+import "./style.css";
 import { Button, type ButtonProps } from "./components/Button";
 
 export { Button, type ButtonProps };
