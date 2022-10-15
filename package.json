@@ -78,7 +78,8 @@
     ".": {
       "import": "dist/rfp.es.js",
       "require": "dist/rfp.cjs.js"
-    }
+    },
+    "styles": "dist/style.css"
   },
   "repository": {
     "type": "git",
