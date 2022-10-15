@@ -11,8 +11,9 @@ export default defineConfig({
     }),
   ],
   build: {
+    sourcemap: true,
     minify: true,
-    cssCodeSplit: true,
+    // cssCodeSplit: true,
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
       name: "react-first-package",
@@ -22,6 +23,8 @@ export default defineConfig({
     rollupOptions: {
       external: ["react", "react-dom"],
       output: {
+        preserveModules: true,
+        preserveModulesRoot: "src",
         globals: {
           react: "React",
           "react-dom": "ReactDOM",
@@ -29,6 +32,5 @@ export default defineConfig({
       },
     },
     target: "esnext",
-    sourcemap: true,
   },
 });
