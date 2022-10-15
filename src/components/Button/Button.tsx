@@ -1,5 +1,5 @@
 import React from "react";
-// eslint-disable-next-line import/no-unresolved
+
 import styles from "./Button.module.css";
 
 export type ButtonProps = Omit<
