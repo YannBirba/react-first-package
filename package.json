@@ -85,5 +85,11 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/YannBirba/react-first-package.git"
-  }
+  },
+  "keywords": [
+    "react",
+    "tailwind",
+    "storybook",
+    "vite"
+  ]
 }

@@ -27,5 +27,5 @@
   "editor.detectIndentation": false,
   "editor.insertSpaces": true,
   "editor.wordWrap": "on",
-  "editor.wordWrapColumn": 80
+  "editor.wordWrapColumn": 80,
 }
