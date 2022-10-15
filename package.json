@@ -5,6 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "npm run lint:fix && tsc && vite build && npm run format:build",
+    "prepack": "cp package.json .package.json.temp && json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\"",
+    "postpack": "mv .package.json.temp package.json || move .package.json.temp package.json",
     "lint": "eslint src --ext .ts,.tsx --max-warnings=0",
     "lint:fix": "eslint src --ext .ts,.tsx --fix",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css}\"",

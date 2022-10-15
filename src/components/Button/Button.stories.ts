@@ -7,7 +7,7 @@ const meta: ComponentMeta<typeof Button> = {
 };
 export default meta;
 
-export const Primary: ComponentStoryObj<typeof Button> = {
+export const Default: ComponentStoryObj<typeof Button> = {
   argTypes: {
     onClick: { action: "clicked" },
     onMouseEnter: { action: "hovered" },
@@ -15,8 +15,6 @@ export const Primary: ComponentStoryObj<typeof Button> = {
   },
   args: {
     "aria-label": "Hello world",
-    buttonClassName:
-      "text-white bg-blue-500 hover:bg-blue-700 font-bold py-2 px-4 rounded",
     children: "Hello world",
     disabled: false,
     submit: false,
