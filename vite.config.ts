@@ -17,7 +17,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
       name: "react-first-package",
-      formats: ["es", "umd", "cjs"],
+      formats: ["es", "cjs"],
       fileName: (format) => `rfp.${format}.js`,
     },
     rollupOptions: {
@@ -25,6 +25,7 @@ export default defineConfig({
       output: {
         preserveModules: true,
         preserveModulesRoot: "src",
+        inlineDynamicImports: false,
         globals: {
           react: "React",
           "react-dom": "ReactDOM",
