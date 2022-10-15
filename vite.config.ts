@@ -12,7 +12,6 @@ export default defineConfig({
     }),
   ],
   build: {
-    ssr: true,
     sourcemap: true,
     minify: true,
     // cssCodeSplit: true,
