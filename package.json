@@ -11,8 +11,6 @@
     "format:build": "prettier --write \"dist/**/*.{d.ts,json,css}\"",
     "postlint": "npm run format",
     "postlint:fix": "npm run format",
-    "prepack": "cp package.json .package.json.temp && json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\"",
-    "postpack": "mv .package.json.temp package.json || move .package.json.temp package.json",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "npm run lint:fix && build-storybook",
     "publish:major": "npm run build && npm version major && npm publish --access=public",
